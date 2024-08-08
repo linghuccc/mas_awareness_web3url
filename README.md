@@ -1,8 +1,12 @@
 This is a Demo Web3 URL project.
 
-Demo site is on W3q Galileo and can be accessed by https://ric.w3q.w3q-g.w3link.io/ (Exp: 2024.08.27) or https://0x57D5BeB9C013145726EaEd835915Fa0eE28e9497.3334.w3link.io/.
+Demo site is on W3q Galileo and accessible at https://ric.w3q.w3q-g.w3link.io/ (Exp: 2024.08.27) or https://0x57D5BeB9C013145726EaEd835915Fa0eE28e9497.3334.w3link.io/.
 
-## Project Information
+## Project Mission
+
+This project aims to convert the [MAS Awareness NFT production site](https://www.mas-awareness.top/) to a completely de-centralized site.
+
+## Repository Information
 
 This repository contains two folders: contract and html.
 
@@ -10,10 +14,6 @@ The contract folder contains the solidity NFT contract.
 The demo [MAS Awareness NFT contract](https://sepolia.etherscan.io/address/0xFbe2C067Eb95b2100f848625e925BeE1eBCBfA90#code) is deployed on Sepolia chain.
 
 The html folder contains the replicate of MAS Awareness NFT project production site and it is uploaded to EthStorage testnet using [ethfs-cli](https://github.com/ethstorage/ethfs-cli/) command.
-
-## Project Mission
-
-This project aims to convert the [MAS Awareness NFT production site](https://www.mas-awareness.top/) to a completely de-centralized site.
 
 ## About MAS Awareness NFT Project
 
@@ -25,4 +25,4 @@ This project was online since end of April but due to lack of publicity, it is s
 
 ## Further Improvements
 
-Convert MAS awareness NFT to composable NFT.
+Considering to convert MAS awareness NFT to composable NFT.
