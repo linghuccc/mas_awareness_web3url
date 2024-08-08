@@ -1,5 +1,7 @@
 This is a Demo Web3 URL project.
 
+Demo site is on W3q Galileo and can be accessed by https://ric.w3q.w3q-g.w3link.io/ (Exp: 2024.08.27) or https://0x57D5BeB9C013145726EaEd835915Fa0eE28e9497.3334.w3link.io/.
+
 ## Project Information
 
 This repository contains two folders: contract and html.
