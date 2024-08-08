@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>MAS Awareness - Yolanda</title>
+		<link rel="stylesheet" href="./styles/global.css" />
+		<link rel="stylesheet" href="./styles/navbar.css" />
+		<link rel="stylesheet" href="./styles/footer.css" />
+		<script>
+			async function fetchSupply() {
+				const url =
+					'https://0xFbe2C067Eb95b2100f848625e925BeE1eBCBfA90.11155111.w3link.io/totalSupply?returns=(uint256)'
+				const response = await fetch(url)
+				const data = await response.text()
+				const totalSupply = parseInt(data.replace(/['"\[\]]/g, ''), 16)
+				document.getElementById('supply').style.fontStyle = 'normal'
+				document.getElementById('supply').textContent =
+					totalSupply.toLocaleString()
+				document.getElementById('remaining_supply').style.fontStyle =
+					'normal'
+				document.getElementById('remaining_supply').textContent = (
+					10000 - totalSupply
+				).toLocaleString()
+			}
+			window.onload = fetchSupply
+		</script>
+	</head>
+	<body>
+		<nav>
+			<div class="nav-container">
+				<div class="logo">
+					<a href="/index.html">MAS Awareness</a>
+				</div>
+				<div class="nav-links">
+					<ul>
+						<li><a href="/index.html">MAS</a></li>
+						<li><a href="/yolanda.html">Yolanda</a></li>
+						<li><a href="/nft.html">NFT</a></li>
+						<li>
+							<a href="#">
+								<img src="/images/button.png" alt="Connect"
+							/></a>
+						</li>
+						<li class="social-links">
+							<a
+								href="https://t.me/mas_awareness"
+								target="_blank"
+								rel="noopener noreferrer"
+							>
+								<img
+									src="/images/telegram.png"
+									alt="Telegram"
+									width="36"
+									height="36"
+								/>
+							</a>
+						</li>
+						<li class="social-links">
+							<a
+								href="https://twitter.com/mas_awareness"
+								target="_blank"
+								rel="noopener noreferrer"
+							>
+								<img
+									src="/images/twitter.jpg"
+									alt="Twitter"
+									width="36"
+									height="36"
+								/>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+		<main>
+			<div class="text-xl font-bold flex justify-center">NFT Project</div>
+			<div
+				class="grid grid-template-columns-auto-323px mt-4 items-center"
+			>
+				<div>
+					<div class="indent-8 justified-paragraph">
+						It was fortunate that I pursued a major in software
+						programming during my university years, which allowed me
+						to work as a freelancer over the past few years. Working
+						from home enabled me to better take care of my
+						daughters. Unfortunately, we did not consider obtaining
+						any medical insurance when my two daughters were born.
+						Therefore, we have been responsible for paying all the
+						medical bills ourselves. Unexpectedly, Yolanda suffered
+						a fracture last November, and I had to borrow around
+						$10K from relatives for her surgery. The total amount
+						borrowed from my relatives has now exceeded $30K.
+					</div>
+					<div class="indent-8 justified-paragraph">
+						As a believer in web 3 and blockchain technology, I
+						conceived the idea of the MAS awareness project. This
+						project aims to raise public awareness about this rare
+						disease while also generating funds. The NFT image is
+						designed to be a half-length portrait of a little girl
+						wearing clothes with patterns on one side, symbolizing
+						cafe-au-lait spots. The portrait will be accompanied by
+						the words 'I Support MAS Patients' on the bottom.
+						Yolanda and I co-designed and hand-drew all the parts of
+						the NFT.
+					</div>
+				</div>
+				<image
+					src="/images/drawing.png"
+					width="283"
+					height="425"
+					alt="Drawing"
+					class="mx-auto rounded"
+				/>
+			</div>
+			<div
+				class="grid grid-template-columns-258px-auto mt-4 items-center"
+			>
+				<image
+					src="/images/sales.png"
+					width="218"
+					height="185"
+					alt="Sales"
+					class="mx-auto rounded"
+				/>
+				<div class="indent-8 justified-paragraph">
+					The MAS awareness project consists of a total of 10,000
+					NFTs, with each NFT priced at 0.09 BNB. The total sales (900
+					BNB) will be divided into three parts: one-third will be
+					allocated as rewards to referrals, one-third will be donated
+					to an MAS charity organization, and one-third will be used
+					to pay off my family's debts and provide support for future
+					medical and living expenses. I aim for this project to
+					extend beyond traditional charity efforts, so I have
+					additional web3 projects planned. Holders of MAS Awareness
+					NFTs will be eligible for airdrops for the future projects.
+				</div>
+			</div>
+			<hr class="separation-line" />
+			<div class="text-xl font-bold flex justify-center">Mint NFT</div>
+			<br />
+			<div class="line-spacing">
+				<div>
+					Sepolia Chain is now connected, and current supply is
+					<span id="supply" style="font-style: italic">
+						Loading supply ... </span
+					>.
+				</div>
+				<div>
+					Mint price is 0.09 BNB, and the number of NFTs available is
+					<span id="remaining_supply" style="font-style: italic">
+						Loading remaining ... </span
+					>.
+				</div>
+				<div>
+					I would like to kindly support by minting
+					<span class="input-wrapper">
+						<input
+							type="number"
+							step="1"
+							min="1"
+							max="10000"
+							value="1"
+							class="text-center input-box ml-2 mr-2"
+					/></span>
+					NFT(s).
+				</div>
+				<button class="mint-button">Mint</button>
+			</div>
+			<hr class="separation-line" />
+			<div class="text-xl font-bold flex justify-center">My NFTs</div>
+			<br />
+			<br />
+			<div class="nft-container">
+				<div class="nft-grid">
+					<div>
+						<a
+							href="./nft_images/2.png"
+							target="_blank"
+							rel="noopener noreferrer"
+						>
+							<img
+								src="./nft_images/2.png"
+								alt="NFT 2"
+								width="140"
+								height="210"
+							/>
+						</a>
+					</div>
+					<div class="mt-2 text-small">MAS Awareness #2</div>
+				</div>
+				<div class="nft-grid">
+					<a
+						href="./nft_images/8.png"
+						target="_blank"
+						rel="noopener noreferrer"
+					>
+						<img
+							src="./nft_images/8.png"
+							alt="NFT 8"
+							width="140"
+							height="210"
+						/>
+					</a>
+					<div class="mt-2 text-small">MAS Awareness #8</div>
+				</div>
+				<div class="nft-grid">
+					<a
+						href="./nft_images/16.png"
+						target="_blank"
+						rel="noopener noreferrer"
+					>
+						<img
+							src="./nft_images/16.png"
+							alt="NFT 16"
+							width="140"
+							height="210"
+						/>
+					</a>
+					<div class="mt-2 text-small">MAS Awareness #16</div>
+				</div>
+				<div class="nft-grid">
+					<a
+						href="./nft_images/17.png"
+						target="_blank"
+						rel="noopener noreferrer"
+					>
+						<img
+							src="./nft_images/17.png"
+							alt="NFT 17"
+							width="140"
+							height="210"
+						/>
+					</a>
+					<div class="mt-2 text-small">MAS Awareness #17</div>
+				</div>
+				<div class="nft-grid">
+					<a
+						href="./nft_images/20.png"
+						target="_blank"
+						rel="noopener noreferrer"
+					>
+						<img
+							src="./nft_images/20.png"
+							alt="NFT 20"
+							width="140"
+							height="210"
+						/>
+					</a>
+					<div class="mt-2 text-small">MAS Awareness #20</div>
+				</div>
+			</div>
+		</main>
+		<footer class="footer">
+			<div class="footer-content line-spacing">
+				<div>This is a Web3 URL Demo site.</div>
+				<div>
+					Please visit
+					<a
+						class="footer-link"
+						href="https://www.mas-awareness.top/"
+						target="_blank"
+						rel="noopener noreferrer"
+					>
+						MAS Awareness
+					</a>
+					for the production site. Thank you.
+				</div>
+				<div>
+					&copy; 2024 by
+					<a
+						class="footer-link"
+						href="https://twitter.com/Ric_Li_C"
+						target="_blank"
+						rel="noopener noreferrer"
+					>
+						Ric Li C </a
+					>. All rights reserved.
+				</div>
+			</div>
+		</footer>
+	</body>
+</html>

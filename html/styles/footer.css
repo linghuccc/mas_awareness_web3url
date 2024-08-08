@@ -1,0 +1,27 @@
+.footer {
+	color: #aa5500;
+	margin-top: 1.5rem;
+	padding-top: 1rem;
+	padding-bottom: 1rem;
+	border-top: 2px solid #aa5500;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.footer-content {
+	max-width: 1024px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.footer-link {
+	color: #3b82f6;
+	text-decoration: none;
+}
+
+.footer-link:hover {
+	text-decoration: underline;
+}
